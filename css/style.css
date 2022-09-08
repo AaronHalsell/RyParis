@@ -4,25 +4,77 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
     margin: 0;
     font: inherit;
     font-size: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
-.header .nav-logo {
-    background-color: #F1A536;
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
 }
 
-.nav-logo {
+h1, h2 {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+a, .copyright {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    margin: 15px 0;
+}
+
+p, .copyright {
+    font-size: 20px;
+}
+
+.header, .nav-logo, footer, .footer-container {
+    background-color: #EB1700;
+}
+
+.nav-logo, .footer-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.row, .nav-logo, .footer-container {
+    width: 1200px;
+    margin: auto;
+}
+
+nav, .footer-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+nav a, .row-imgs h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.row {
+    padding: 40px 0;
+}
+
+.hero-index {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-image.jpg");
+}
+
+.hero-recipe {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bengal-burger.jpg");
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-image.jpg");
-    height: 75vh;
-    width: 100%;
-    background-position: top left;
-    background-repeat: no-repeat;
+    height: 80vh;
+    background-position: center;
     background-size: cover;
-    position: relative;
 }
 
 .hero-text {
@@ -32,15 +84,210 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    text-transform: uppercase;
 }
 
-.the-everyday {
+.row-imgs {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    text-align: center;
 }
 
-.the-everyday img {
-    width: 400px;
+.row-imgs h3 {
+    padding: 10px 0;
+}
+
+.everyday-img {
+    width: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.breakfast-ideas-img {
+    background-image: url(../images/breakfast-ideas.jpg);
+}
+
+.lunch-ideas-img {
+    background-image: url(../images/vegetarian-ideas.jpg);
+}
+
+.dinner-ideas-img {
+    background-image: url(../images/cold-weather-dinners.jpeg);
+}
+
+.row-recolor {
+    background-color: #DADFEA;
+}
+
+.health-recipes-container {
+    background-color: #fff;
 }
 
 
+.recipes-img {
+    width: 275px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+}
+
+.peppers-img {
+    background-image: url(../images/fajita-peppers.jpeg);
+}
+
+.muffins-img {
+    background-image: url(../images/muffins.jpeg);
+}
+
+.eggplant-img {
+    background-image: url(../images/eggplant-parmesan.jpg);
+}
+
+.teriyaki-img {
+    background-image: url(../images/teriyaki-chicken.jpeg);
+}
+
+.eat-img {
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 325px;
+    border: 8px solid #DADFEA;
+}
+
+.samich-img {
+    background-image: url(../images/burger.jpg);
+}
+
+.fifty-pizza-img {
+    background-image: url(../images/pizza.jpeg);
+}
+
+.city-guides-img {
+    background-image: url(../images/muffins.jpeg); /* replace image */
+}
+
+.footer-container {
+    padding: 40px 0;
+}
+
+
+/* RECIPES */
+
+.time-bold {
+    font-weight: 600;
+}
+
+.bengal-info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+.blurb {
+    background-color: #EEF0F4;
+    padding: 2vh 8vw;
+    margin-bottom: 20px;
+}
+
+.blurb p {
+    color: #575656;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.print-download i {
+    color: #575656;
+    border: 1px solid #575656;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.print-download i:hover {
+    background-color: #EEF0F4;
+    cursor: pointer;
+    
+}
+
+.instructions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.instructions h3 {
+    margin: 20px 0 5px 20px;
+    font-size: 20px;
+}
+
+.ingredients {
+    width: 40%;
+}
+
+.ingredients h2 {
+    margin-bottom: 20px;
+}
+
+.ingredients li {
+    margin: 0 0 10px 20px;
+}
+
+.directions {
+    width: 60%;
+}
+
+td {
+    padding: 20px 35px 10px 0;
+}
+
+td, .instructions li {
+    font-size: 18px;
+}
+
+.directions li {
+    margin: 20px 0px 10px 20px;
+}
+
+.directions .time-bold {
+    margin-left: 20px;
+}
+
+.directions .time-bold, .directions li {
+    padding-left: 5px;
+}
+
+.directions .list-break {
+    margin-top: 0px;
+}
+
+.stars {
+    color: #FFA41C;
+    padding-right: 10px;
+}
+
+.stars, .reviews {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.save-recipe {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFD814;
+    margin: 20px 20px 20px 0;
+}
+
+.save-recipe:hover {
+    background-color: #F7CA00;
+    cursor: pointer;
+}
+
+/* Add a Media query at 1200 */
