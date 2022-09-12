@@ -41,6 +41,7 @@ p, .copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .row, .nav-logo, .footer-container {
@@ -75,6 +76,7 @@ nav a, .row-imgs h3 {
     height: 80vh;
     background-position: center;
     background-size: cover;
+    background-position: fixed;
 }
 
 .hero-text {
@@ -201,6 +203,10 @@ nav a, .row-imgs h3 {
     line-height: 1.2;
 }
 
+.print-download {
+    margin: 20px 0;
+}
+
 .print-download i {
     color: #575656;
     border: 1px solid #575656;
@@ -283,6 +289,8 @@ td, .instructions li {
     border-radius: 20px;
     background-color: #FFD814;
     margin: 20px 20px 20px 0;
+    color: #000;
+    font-weight: 300;
 }
 
 .save-recipe:hover {
@@ -290,4 +298,100 @@ td, .instructions li {
     cursor: pointer;
 }
 
+
+/* MODAL STYLES */
+
+.openbtn {
+    font-size: 85px;
+    background-color: #EB1700;
+    border-radius: 100%;
+    padding: 10px 20px;
+    transition: all .2s ease-in-out;
+}
+
+.openbtn:hover {
+    font-size: 90px;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.theModal {
+    visibility: hidden;
+    position: absolute;
+    top: 15%;
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.video {
+    width: 99%;
+    height: 675px;
+}
+
+.theFlex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#closebtn {
+    font-size: 20px;
+    color: #fff;
+    padding-right: 10px;
+}
+
+#closebtn:hover {
+    cursor: pointer;
+}
+
 /* Add a Media query at 1200 */
+
+@media only screen and (max-width: 1200px) {
+    .row, .nav-logo, .footer-container {
+        width: 100%;
+        margin: 0;
+    }
+    .row-imgs {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .nav-logo, .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    nav, .footer-nav {
+        display: flex;
+        justify-content: space-around;
+        width: 45%;
+    }
+    .theModal {
+        width: 100%;
+  }
+
+    .time-row {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+    .instructions {
+        flex-wrap: wrap;
+    }
+
+    .ingredients {
+        width: 100%;
+    }
+    .directions {
+        width: 100%;
+    }
+}

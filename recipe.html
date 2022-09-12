@@ -4,6 +4,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>RYParis</title>
+        <script src="js/scripts.js" defer></script>
     </head>
     <body>    
         <div class="header">
@@ -19,15 +20,15 @@
                 </nav>
             </div>
         </div>
-
         <div class="hero-image hero-recipe">
             <div class="hero-text">
+                <span class="openbtn" id="openbtn"><span onclick="openModal()">&#9658;</span></span>
                 <h1>Hamburger of the Week</h1>
             </div>
         </div>
 
         <div class="row-recolor">
-            <div class="row">
+            <div class="row time-row">
                 <h2>Time</h2>
                 <table>
                     <tbody>
@@ -51,7 +52,7 @@
                     <span class="stars">&starf; &starf; &starf; &starf; &starf;</span><span class="reviews">26 Reviews</span>
                 </div>
                 <div class="print-download">
-                    <input class="save-recipe" type="button" value="Save Recipe"><i class="fa fa-print"></i>
+                    <a href="images/instructions.pdf" target="_blank" class="save-recipe">Save Recipe</a><i onclick="window.print();" class="fa fa-print"></i>
                 </div>
                 <div class="blurb">
                     <p>"No more dry, lackluster burgers. These are juicy, and spices can be easily added or changed to suit anyone's taste.
@@ -60,6 +61,7 @@
                     </p>
                 </div>
             </div>
+
             <div class="instructions">
                 <div class="ingredients">
                     <h2>Ingredients</h2>
@@ -107,9 +109,18 @@
                         <li>For Well: Cook for 5 mintues covered and then unplug the machine</li>
                     </ol> 
                 </div>
-
             </div>
         </div>
+        <div class="row">
+            <div class="theModal" id="theModal">
+                <div class="theFlex">
+                    <span id="closebtn" onclick="closeModal()">&#10006;</span>
+                </div>
+                <iframe class="video"
+                    src="https://www.youtube.com/embed/Z8Ke8zKjeXM">
+                </iframe>
+            </div>
+            </div>
         <footer>
             <div class="footer-container">
             <div class="copyright">&copy; 2022 RY PARIS</div>
@@ -124,3 +135,4 @@
         </footer>
     </body>
 </html>
+
