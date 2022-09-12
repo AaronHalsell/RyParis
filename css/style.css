@@ -41,7 +41,6 @@ p, .copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .row, .nav-logo, .footer-container {
@@ -358,19 +357,8 @@ td, .instructions li {
         flex-wrap: wrap;
         text-align: center;
     }
-    .nav-logo, .footer-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-    }
     
-    nav, .footer-nav {
-        display: flex;
-        justify-content: space-around;
-        width: 45%;
-    }
-    .theModal {
+    .theModal, nav, .footer-nav  {
         width: 100%;
   }
 
@@ -388,10 +376,14 @@ td, .instructions li {
         flex-wrap: wrap;
     }
 
-    .ingredients {
+    .ingredients, .directions {
         width: 100%;
+        padding: 0 20px;
     }
-    .directions {
-        width: 100%;
+    .nav-logo, .footer-container {
+        flex-flow: column;
+    }
+    .header {
+        padding-bottom: 20px
     }
 }
