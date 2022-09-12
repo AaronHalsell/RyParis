@@ -318,7 +318,7 @@ td, .instructions li {
 .theModal {
     visibility: hidden;
     position: absolute;
-    top: 15%;
+    top: 10%;
     height: 700px;
     width: 1200px;
     margin: 0 auto;
